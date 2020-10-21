@@ -104,6 +104,7 @@ label {
   padding-right: 4px;
 }
 
+
 /* Top Bar */
 
 app-top-bar {
@@ -120,4 +121,12 @@ app-top-bar {
 app-top-bar h1 {
   color: white;
   margin: 0;
+}
+
+
+/*  Products  */
+
+/* TODO: why doesn't this work in products.component.css? */
+app-products {
+  width: 100%;
 }

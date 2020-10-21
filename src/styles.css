@@ -118,6 +118,14 @@ app-top-bar, app-footer {
   align-items: center;
 }
 
+app-top-bar {
+
+  display: flex;
+  align-items: flex-start;
+  /*justify-content: center;*/
+  flex-direction: row;
+}
+
 app-top-bar h1, app-footer .footer-link {
   color: white;
   margin: 0;
@@ -157,6 +165,14 @@ app-products {
 
 .new-section {
   margin-top: 55px;
+}
+
+
+.align-horizontally {
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
 }
 
 .center-horizontally {

@@ -158,3 +158,9 @@ app-products {
 .new-section {
   margin-top: 55px;
 }
+
+.center-horizontally {
+  width: 100%;
+
+  text-align: center;
+}

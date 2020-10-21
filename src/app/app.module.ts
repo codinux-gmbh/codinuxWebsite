@@ -7,7 +7,9 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { ProductsComponent } from './components/products/products.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 @NgModule({
@@ -17,12 +19,15 @@ import { ProductsComponent } from './components/products/products.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductsComponent },
+      { path: 'about', component: AboutComponent },
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductsComponent
+    FooterComponent,
+    ProductsComponent,
+    AboutComponent
   ],
   bootstrap: [ AppComponent ]
 })

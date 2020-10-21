@@ -1,0 +1,16 @@
+
+.about-line {
+    font-size: 19px;
+
+    max-width: 700px;
+
+    margin-bottom: 8px;
+}
+
+.about-new-paragraph {
+    margin-top: 35px;
+}
+
+.about-new-section {
+    margin-top: 55px;
+}

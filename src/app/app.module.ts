@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductsComponent } from './components/products/products.component';
+import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
 
 
@@ -19,6 +20,7 @@ import { AboutComponent } from './components/about/about.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductsComponent },
+      { path: 'contact', component: ContactComponent },
       { path: 'about', component: AboutComponent },
     ])
   ],
@@ -27,6 +29,7 @@ import { AboutComponent } from './components/about/about.component';
     TopBarComponent,
     FooterComponent,
     ProductsComponent,
+    ContactComponent,
     AboutComponent
   ],
   bootstrap: [ AppComponent ]

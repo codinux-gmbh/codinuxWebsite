@@ -126,7 +126,7 @@ app-top-bar {
   flex-direction: row;
 }
 
-app-top-bar h1, app-footer .footer-link {
+app-top-bar h1, app-footer .centered-child {
   color: white;
   margin: 0;
 }
@@ -179,4 +179,11 @@ app-products {
   width: 100%;
 
   text-align: center;
+}
+
+.centered-child {
+  text-align: center;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
 }

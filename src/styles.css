@@ -126,7 +126,7 @@ app-top-bar {
   flex-direction: row;
 }
 
-app-top-bar h1, app-footer .centered-child {
+app-top-bar h1, app-top-bar h2, app-footer .centered-child {
   color: white;
   margin: 0;
 }

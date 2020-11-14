@@ -1,0 +1,48 @@
+<form class="form" [formGroup]="createEpcQrCodeForm" (ngSubmit)="onSubmit(createEpcQrCodeForm.value)">
+
+    <div class="form-section">
+        <label for="receiverName">
+            Receiver Name
+        </label>
+        <input id="receiverName" class="form-input" type="text" formControlName="receiverName">
+    </div>
+
+    <div class="form-section">
+        <label for="iban">
+            IBAN
+        </label>
+        <input id="iban" class="form-input" type="text" formControlName="iban">
+    </div>
+
+    <div class="form-section">
+        <label for="bic">
+            BIC
+        </label>
+        <input id="bic" class="form-input" type="text" formControlName="bic">
+    </div>
+
+    <div class="form-section">
+        <label for="amount">
+            Amount
+        </label>
+        <input id="amount" class="form-input" type="number" pattern="[0-9]+([\,][0-9]{0, 2})?" step=".01" (keydown)="ensureCorrectNumberFormat($event)" formControlName="amount" >
+    </div>
+
+    <div class="form-section">
+        <label for="reference">
+            Reference
+        </label>
+        <input id="reference" class="form-input" type="text" formControlName="reference">
+    </div>
+
+    <button class="button" type="submit">Generate</button>
+
+</form>
+
+
+<div #qrCodeView>
+
+</div>
+
+<p class="multiline">{{qrCodeContent}}</p>
+

@@ -4,3 +4,8 @@
 
     margin-right: 8px;
 }
+
+/* TODO: use Bootstrap instead of hard coding space between navigation links */
+.navigation-link {
+    margin-left: 30px;
+}

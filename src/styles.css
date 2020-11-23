@@ -132,7 +132,7 @@ app-footer {
 
 /*  Products  */
 
-/* TODO: why doesn't this work in products.component.css? */
+/* TODO: why doesn't this work in products.component.scss? */
 app-products {
   width: 100%;
 }

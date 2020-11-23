@@ -7,7 +7,7 @@ import { BrowserQRCodeSvgWriter } from '@zxing/library'
 @Component({
   selector: 'app-epc-qr-code-generator',
   templateUrl: './epc-qr-code-generator.component.html',
-  styleUrls: ['./epc-qr-code-generator.component.css']
+  styleUrls: ['./epc-qr-code-generator.component.scss']
 })
 export class EpcQrCodeGeneratorComponent {
 

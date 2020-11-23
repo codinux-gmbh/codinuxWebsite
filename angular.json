@@ -28,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -71,7 +71,7 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "codinuxWebsite:build:production",
+              "browserTarget": "codinuxWebsite:build:production"
             }
           }
         },
@@ -126,5 +126,10 @@
       }
     }
   },
-  "defaultProject": "codinuxWebsite"
+  "defaultProject": "codinuxWebsite",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

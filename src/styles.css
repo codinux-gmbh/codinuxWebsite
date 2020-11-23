@@ -111,14 +111,8 @@ app-top-bar, app-footer {
 app-top-bar {
 
   display: flex;
-  align-items: flex-start;
-  /*justify-content: center;*/
+  align-items: center;
   flex-direction: row;
-}
-
-app-top-bar h1, app-top-bar h2, app-footer .centered-child {
-  color: white;
-  margin: 0;
 }
 
 app-footer {
@@ -128,6 +122,11 @@ app-footer {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+
+.navigation-link {
+  color: white;
+  margin: 0;
 }
 
 
@@ -161,7 +160,7 @@ app-products {
 .align-horizontally {
 
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
 }
 

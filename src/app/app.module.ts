@@ -22,7 +22,7 @@ import { AboutComponent } from './components/about/about.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductsComponent },
-      { path: 'qrcode', component: EpcQrCodeGeneratorComponent },
+      { path: 'epcqrcode', component: EpcQrCodeGeneratorComponent },
       { path: 'downloads', component: DownloadsComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'about', component: AboutComponent },

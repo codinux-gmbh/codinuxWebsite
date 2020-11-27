@@ -64,8 +64,10 @@ export class EpcQrCodeGeneratorComponent {
         bic + "\n" + receiverName + "\n" + iban + "\n" + "EUR" + this.format(amount) + "\n" +
         "CHAR" + "\n" + "" + "\n" + reference
 
+    const qrCodeSize = Math.min(window.innerWidth - 60, 350) // 60 = 2 * 2 * 15, 15 = Bootstrap default margin, applied two times on both sides
+
     const codeWriter = new BrowserQRCodeSvgWriter()
-    const svgElement = codeWriter.write(qrCodeContent, 500, 500)
+    const svgElement = codeWriter.write(qrCodeContent, qrCodeSize, qrCodeSize)
 
     this.qrCodeView.nativeElement.textContent = "" // clear current children
 

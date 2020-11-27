@@ -10,7 +10,7 @@ $playstore-logo-width: calc(#{$app-store-logo-height} * 2.584); /* PlayStore log
 .product-title {
     width: 100%;
 
-    margin-top: 120px;
+    margin-top: 90px;
 
     text-align: center;
 
@@ -22,18 +22,21 @@ $playstore-logo-width: calc(#{$app-store-logo-height} * 2.584); /* PlayStore log
 }
 
 .product-description {
-
+    max-width: 700px;
 }
 
 .product-logo {
     width: 150px;
 
     height: 150px;
+
+    margin-bottom: 24px;
 }
 
+.product-features {
+    max-width: 600px;
 
-.app-store-links-container {
-    margin-bottom: 50px;
+    font-size: 18px;
 }
 
 .app-store-logo {
@@ -53,4 +56,8 @@ $playstore-logo-width: calc(#{$app-store-logo-height} * 2.584); /* PlayStore log
 
 .app-store-logo-playstore {
     width: $playstore-logo-width;
+}
+
+.app-store-link-title {
+    font-size: 18px;
 }

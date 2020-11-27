@@ -1,5 +1,8 @@
 /* Global Styles */
 
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+
 * {
   font-family: 'Roboto', Arial, sans-serif;
   color: #616161;
@@ -12,13 +15,18 @@ body {
   margin: 0;
 }
 
-.container {
+.app-container {
   display: flex;
   flex-direction: row;
 }
 
 router-outlet + *  {
   padding: 0 16px;
+}
+
+
+.container {
+  width: 100%;
 }
 
 /* Text */
@@ -157,11 +165,18 @@ app-products {
 }
 
 
-.align-horizontally {
+.align-row-horizontally {
 
   display: flex;
   align-items: center;
   flex-direction: row;
+}
+
+.align-column-horizontally {
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .center-horizontally {

@@ -1,12 +1,4 @@
 
-$app-store-logo-height: 130px;
-
-$appstore-logo-width: calc(#{$app-store-logo-height} * 2.9941348973607); /* Appstore logo's width to height ratio is 2,9941348973607 -> width = 130px * 2,9941348973607 */
-$appstore-logo-padding: 20px; /* PlayStore logo has some invisible padding around it, so we also have to apply this padding to Appstore logo */
-
-$playstore-logo-width: calc(#{$app-store-logo-height} * 2.584); /* PlayStore logo's width to height ratio is 2,584 -> width = 130px * 2,584 */
-
-
 .product-title {
     width: 100%;
 
@@ -39,23 +31,12 @@ $playstore-logo-width: calc(#{$app-store-logo-height} * 2.584); /* PlayStore log
     font-size: 18px;
 }
 
+
 .app-store-logo {
-    width: $appstore-logo-width; /* = width of the largest icon */
+    height: 90px;
 
-    height: $app-store-logo-height;
-
-    margin-bottom: 8px;
-}
-
-.app-store-logo-appstore {
-    width: $appstore-logo-width;
-
-    padding-top: $appstore-logo-padding;
-    padding-bottom: $appstore-logo-padding;
-}
-
-.app-store-logo-playstore {
-    width: $playstore-logo-width;
+    margin-top: 16px;
+    margin-bottom: 12px;
 }
 
 .app-store-link-title {

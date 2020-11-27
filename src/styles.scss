@@ -15,7 +15,16 @@ body {
   margin: 0;
 }
 
+
+// to keep the footer at the bottom, see https://stackoverflow.com/a/51410022
 .app-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.content-container {
   display: flex;
   flex-direction: row;
 }

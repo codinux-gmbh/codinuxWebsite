@@ -16,28 +16,6 @@ body {
 }
 
 
-// to keep the footer at the bottom, see https://stackoverflow.com/a/51410022
-.app-container {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between
-}
-
-.content-container {
-  display: flex;
-  flex-direction: row;
-}
-
-router-outlet + *  {
-  padding: 0 16px;
-}
-
-
-.container {
-  width: 100%;
-}
-
 /* Text */
 
 h1 {
@@ -109,6 +87,29 @@ label {
 .button:disabled, button:disabled {
   opacity: 0.5;
   cursor: auto;
+}
+
+
+// to keep the footer at the bottom, see https://stackoverflow.com/a/51410022
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+}
+
+router-outlet + *  {
+  padding: 0 16px;
+}
+
+
+.container {
+  width: 100%;
 }
 
 

@@ -15,8 +15,6 @@ export class EpcQrCodeGeneratorComponent {
 
   @ViewChild('qrCodeView') qrCodeView: ElementRef
 
-  qrCodeContent: string = ""
-
 
   constructor(
       private formBuilder: FormBuilder,
@@ -62,12 +60,12 @@ export class EpcQrCodeGeneratorComponent {
     // let param = new CreatorParam(receiverName, iban, bic, amount, reference)
     // this.qrCodeContent = creator.generateAsString(param)
 
-    this.qrCodeContent = "BCD" + "\n" + "002" + "\n" + this.map("Utf-8") + "\n" + "SCT" + "\n" +
+    const qrCodeContent = "BCD" + "\n" + "002" + "\n" + this.map("Utf-8") + "\n" + "SCT" + "\n" +
         bic + "\n" + receiverName + "\n" + iban + "\n" + "EUR" + this.format(amount) + "\n" +
         "CHAR" + "\n" + "" + "\n" + reference
 
     const codeWriter = new BrowserQRCodeSvgWriter()
-    const svgElement = codeWriter.write(this.qrCodeContent, 500, 500)
+    const svgElement = codeWriter.write(qrCodeContent, 500, 500)
 
     this.qrCodeView.nativeElement.textContent = "" // clear current children
 

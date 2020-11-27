@@ -1,9 +1,14 @@
 <div class="app-container">
 
-  <app-top-bar></app-top-bar>
+  <!-- keep everything except footer one element so that footer gets pushed to the bottom due to .app-container style -->
+  <div>
 
-  <div class="content-container">
-    <router-outlet></router-outlet>
+    <app-top-bar></app-top-bar>
+
+    <div class="content-container">
+      <router-outlet></router-outlet>
+    </div>
+
   </div>
 
   <app-footer></app-footer>

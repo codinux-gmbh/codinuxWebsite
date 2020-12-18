@@ -13,6 +13,7 @@ import { EpcQrCodeGeneratorComponent } from './components/epc-qr-code-generator/
 import { DownloadsComponent } from './components/downloads/downloads.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
+import { LogoComponent } from './components/logo/logo.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { AboutComponent } from './components/about/about.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductsComponent },
+      { path: 'logo', component: LogoComponent },
       { path: 'epcqrcode', component: EpcQrCodeGeneratorComponent },
       { path: 'downloads', component: DownloadsComponent },
       { path: 'contact', component: ContactComponent },
@@ -33,6 +35,7 @@ import { AboutComponent } from './components/about/about.component';
     TopBarComponent,
     FooterComponent,
     ProductsComponent,
+    LogoComponent,
     DownloadsComponent,
     EpcQrCodeGeneratorComponent,
     ContactComponent,

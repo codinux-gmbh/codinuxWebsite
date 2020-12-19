@@ -166,15 +166,22 @@ app-footer {
 }
 
 
-/*  Products  */
+/*  Pages  */
 
-/* TODO: why doesn't this work in products.component.scss? */
 app-products {
-  width: 100%;
+  @extend .page-container
+}
+
+app-epc-qr-code-generator {
+  @extend .page-container
 }
 
 
 /*  common  */
+
+.page-container {
+  width: 100%;
+}
 
 .line {
   font-size: 19px;

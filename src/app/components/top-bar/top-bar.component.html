@@ -1,15 +1,31 @@
-<a class="align-row-horizontally" [routerLink]="['/']">
-  <img class="page-logo" src="assets/codinuxLogo.svg" />
 
-  <h1 class="navigation-link">codinux</h1>
-</a>
+<nav class="top-bar">
 
-<div class="align-row-horizontally">
-  <a class="navigation-link top-bar-navigation-link" [routerLink]="['/epcqrcode']">
-    EPC QR code
+  <a class="navbar-brand align-row-horizontally" [routerLink]="['/']">
+    <img class="page-logo" src="assets/codinuxLogo.svg" />
+
+    <h1 class="navigation-link">codinux</h1>
   </a>
 
-  <a class="navigation-link top-bar-navigation-link" [routerLink]="['/downloads']">
-    Downloads
-  </a>
-</div>
+
+  <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" (click)="toggleSideBarVisibility()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" [ngbCollapse]="isSideBarCollapsed" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="top-bar-navigation-link" [routerLink]="['/epcqrcode']" (click)="toggleSideBarVisibility()">
+          EPC QR code
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="top-bar-navigation-link" [routerLink]="['/downloads']" (click)="toggleSideBarVisibility()">
+          Downloads
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</nav>

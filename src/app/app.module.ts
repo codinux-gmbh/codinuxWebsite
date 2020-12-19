@@ -5,6 +5,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http'
 
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap"
+
+
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -20,6 +23,7 @@ import { AboutComponent } from './components/about/about.component';
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
+    NgbModule,
     RouterModule.forRoot([
       { path: '', component: ProductsComponent },
       { path: 'epcqrcode', component: EpcQrCodeGeneratorComponent },

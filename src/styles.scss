@@ -46,8 +46,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  opacity: 0.8;
+a:hover, a:active {
+  color: $ci-color-accent;
 }
 
 /* Input */
@@ -149,7 +149,7 @@ app-footer {
   flex-direction: row;
 }
 
-.navigation-link {
+.navigation-link, .navigation-link:active {
   color: white;
   margin: 0;
 }

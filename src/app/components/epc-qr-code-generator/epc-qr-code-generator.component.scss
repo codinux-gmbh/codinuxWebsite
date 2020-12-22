@@ -1,4 +1,7 @@
 
+$input-width: 300px;
+
+
 p {
     font-size: 18px;
 
@@ -14,10 +17,17 @@ p {
 }
 
 .form-input {
-    width: 300px;
+    width: $input-width;
 }
 
 .multiline {
     white-space: pre-wrap;
     line-height: 22px;
+}
+
+.button {
+    width: $input-width;
+    height: 50px;
+
+    margin-top: 12px;
 }
